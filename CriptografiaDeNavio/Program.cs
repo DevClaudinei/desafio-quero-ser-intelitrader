@@ -19,13 +19,13 @@ class Program
 
         foreach (string chunk in encryptedMessageChunks)
         {
-            decryptedBinary += swapNumberPositions(chunk);
+            decryptedBinary += SwapNumberPositions(chunk);
         }
 
         return decryptedBinary;
     }
 
-    static string swapNumberPositions(string binaryChunk)
+    static string SwapNumberPositions(string binaryChunk)
     {
         char[] bits = binaryChunk.ToCharArray();
 
